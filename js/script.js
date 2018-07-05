@@ -63,7 +63,7 @@ function printQuote() {
   html += "<span class='category'>" + newQuote.category + "</span>";
 
 //displays the final HTML string to the page
-   document.querySelector('#quote-box').innerHTML = html;
+   document.getElementById('quote-box').innerHTML = html;
  }
 
 //to get a random colour background
