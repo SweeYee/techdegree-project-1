@@ -5,18 +5,18 @@ document.getElementById('loadQuote').addEventListener("click", printQuote, false
 
 //array of quotes, optional citation or year, add property:category
 var quotes = [
-	{
-		quote: "Sometimes life is going to hit you in the head with a brick. Don't lose faith.",
-	 	source: "Steve Jobs",
-		citation: "Biography by Walter Isaacson",
-	 	year: 2000,
-    category: "Life Quote"
+{
+  quote: "Sometimes life is going to hit you in the head with a brick. Don't lose faith.",
+  source: "Steve Jobs",
+  citation: "Biography by Walter Isaacson",
+  year: 2011,
+  category: "Life Quote"
 },
 {
   quote: "If you can’t make it good, at least make it look good.",
   source: "Bill Gates",
   citation: "BG Biography",
-  year: 2010,
+  year: 2014,
   category: "Life Quote"
 },
 {
@@ -63,8 +63,8 @@ function printQuote() {
   html += "<span class='category'>" + newQuote.category + "</span>";
 
 //displays the final HTML string to the page
-   document.getElementById('quote-box').innerHTML = html;
- }
+ document.getElementById('quote-box').innerHTML = html;
+}
 
 //to get a random colour background
 function randomColor() {
@@ -78,8 +78,8 @@ function randomColor() {
 //when quotes changes, the "randomColor" function is called
 document.getElementById('loadQuote').addEventListener("click", randomColor);
 
-//Autoload a new quote every 5 seconds
+//autoload a new quote every 5 seconds
 function autoClick() {
-  document.getElementById('loadQuote').click();
+document.getElementById('loadQuote').click();
 }
 window.setInterval(autoClick, 5000);
