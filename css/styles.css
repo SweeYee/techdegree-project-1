@@ -13,12 +13,12 @@ body {
   line-height: .5;
 }
 .quote {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 400;
   line-height: 1.1;
   position: relative;
   margin: 0;
-  } 
+  }
 .quote:before, .quote:after {
   font-size: 6rem;
   line-height: 2.5rem;
@@ -43,16 +43,27 @@ body {
   margin-right: 4em;
 }
 .source:before {
+  text-align: right;
   content: "—";
 }
 .citation {
   font-style: italic;
 }
 .citation:before {
-  content: ", ";
+  content: ",  ";
   font-style: normal;
 }
 .year:before {
+  content: ",  ";
+  font-style: normal;
+}
+.category {
+  content: ", ";
+  font-size: 0.8rem;;
+  font-style: italic;
+  font-weight: inherit;
+}
+.category:before {
   content: ", ";
   font-style: normal;
 }
